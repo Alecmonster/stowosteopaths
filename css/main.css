@@ -1,0 +1,296 @@
+@import url(../css/normalize.css);
+body {
+  font-family: 'Libre Baskerville', 'Arial Black', serif;
+  overflow-x: hidden;
+  width: 100%; }
+
+#wrapper {
+  margin: auto;
+  max-width: 1220px;
+  overflow: hidden;
+  width: 100%; }
+
+/*NAV*/
+#title {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 19vh;
+  margin-top: 0; }
+
+h1 {
+  display: inline-block;
+  margin-left: 30px;
+  position: absolute;
+  top: -20px; }
+
+.desktopNav {
+  background: white;
+  height: 12vh;
+  line-height: 12vh;
+  opacity: 0.9;
+  width: 100%; }
+
+.navLinksList {
+  display: inline;
+  margin-left: 55%; }
+
+.navLinks {
+  display: inline-block; }
+
+a {
+  color: black;
+  font-size: 1rem;
+  margin: 0 1vw 0 1vw;
+  text-decoration: none;
+  display: inline-block; }
+
+/*	Hero*/
+figure {
+  height: 720px;
+  margin: -125px 0;
+  position: relative;
+  width: 100%;
+  z-index: -1; }
+
+figure:before {
+  background-image: url("../images/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 800px;
+  position: absolute;
+  width: 100%;
+  z-index: -1; }
+
+.hero {
+  height: 99vh;
+  width: 100%; }
+
+/*Main content*/
+main {
+  background: white;
+  margin-top: -15vh;
+  opacity: 0.99;
+  padding-top: 2vh;
+  text-align: center;
+  width: 100%; }
+
+.postcode {
+  margin: -3vh auto 3vh;
+  padding-top: 3vh;
+  width: 75%; }
+
+.address {
+  font-size: 1rem; }
+
+/*	Bullets*/
+.sellingPoints {
+  background: #E6E7E8;
+  height: 365px;
+  margin-top: 2vh;
+  opacity: 1;
+  padding: 2%; }
+
+.bulletContainers {
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  float: left;
+  height: 120px;
+  list-style: none;
+  margin: 1%;
+  padding: 1%;
+  position: relative;
+  text-align: center;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 28%; }
+
+.bulletContainers:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.bullets {
+  font-size: 1rem;
+  font-style: bold;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 98%; }
+
+/*Images*/
+.textAndImageBlock {
+  display: inline-block;
+  width: 100%; }
+
+.blueBack {
+  background: #E6E7E8; }
+
+.circleImage {
+  border-radius: 50%;
+  border: solid 1px black;
+  height: 350px;
+  width: 350px; }
+
+.rightImage {
+  float: right;
+  margin: 80px 12% 80px 5%; }
+
+.leftImage {
+  float: left;
+  margin: 80px 5% 80px 12%; }
+
+.text {
+  display: inline-block;
+  margin-bottom: 80px;
+  width: 35%; }
+
+.topText {
+  margin-top: 100px; }
+
+.middleText {
+  margin-top: 140px; }
+
+.bottomText {
+  margin-top: 90px; }
+
+/*Map*/
+.map {
+  width: 100%;
+  background: #E6E7E8;
+  height: 450px; }
+
+map {
+  margin: 20px 0 20px 0;
+  display: inline-block;
+  float: left;
+  border: solid 1px black; }
+
+.contact {
+  float: left;
+  padding: 60px 11% 0 12%;
+  width: 30%;
+  display: inline-block; }
+
+/*footer*/
+footer {
+  background: black;
+  color: white;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  opacity: 0.9; }
+
+.addressContainer {
+  height: 100px;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+address {
+  display: inline-block;
+  margin: 20px 0 0 20px; }
+
+.phone {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  padding: 20px; }
+
+/*FAQS*/
+.background {
+  opacity: 0.9;
+  position: relative;
+  z-index: -1; }
+
+.textContainer {
+  margin-top: 100px; }
+
+.answers {
+  background: white;
+  border-radius: 2px;
+  line-height: 1.2rem;
+  margin: 0 auto;
+  padding: 0 200px 30px 200px; }
+
+.subtitle {
+  background: white;
+  margin: 50px auto 0;
+  padding: 20px; }
+
+.pic {
+  border-radius: 2px;
+  height: 400px;
+  margin: 50px 0 0; }
+
+.pic.bottom {
+  margin: 50px; }
+
+/*ABOUT US*/
+.portrait {
+  height: 200px;
+  margin-bottom: 20px;
+  width: 200px; }
+
+/*
+																						
+
+
+
+
+
+
+
+
+																							MEDIA QUERIES*/
+@media screen and (max-width: 1090px) {
+  .textAndImageBlock .rightImage {
+    margin: 170px 10% 80px 5%; }
+  .textAndImageBlock .leftImage {
+    margin: 110px 5% 80px 10%; }
+  .textAndImageBlock .circleImage {
+    height: 250px;
+    width: 250px; }
+  .textAndImageBlock .middleText {
+    margin-top: 80px; }
+  .textAndImageBlock .bottomText {
+    margin-top: 80px; }
+  .textAndImageBlock .topText {
+    margin-top: 80px; }
+  .map .contact {
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%; }
+  main .map {
+    height: 720px; }
+  main map {
+    float: none; }
+  nav .navLinksList {
+    margin-left: 45%; } }
+
+@media screen and (max-width: 835px) {
+  html body p {
+    font-size: 0.8rem; }
+  body .bullets {
+    font-size: 0.8rem; }
+  .desktopNav .navLinksList {
+    display: none; }
+  body figure {
+    height: 550px; }
+  body .hero {
+    height: 500px; }
+  body figure:before {
+    height: 500px; }
+  body .desktopNav {
+    text-align: center; }
+  .desktopNav #title {
+    margin: 0 auto;
+    position: relative; }
+  .desktopNav a {
+    text-align: center; }
+  .textAndImageBlock .bottomText {
+    margin-top: 50px; }
+  .textAndImageBlock .topText {
+    margin-top: 50px; }
+  .textAndImageBlock .rightImage {
+    margin: 100px 10% 80px 5%; }
+  .textAndImageBlock .leftImage {
+    margin: 90px 5% 80px 10%; } }
